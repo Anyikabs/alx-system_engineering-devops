@@ -7,9 +7,9 @@
 
 ## Impact:
 The MySQL replication setup between the primary server (web-01) and the replica server (web-02) encountered a disruption, leading to data inconsistencies and impacting around 10% of users who experienced delayed or incorrect responses.
-
+                                        
 ## Root cause                                         
-
+![](https://blog.systemsengineering.com/hs-fs/hubfs/blog-files/Root%20Cause.jpg?width=600&name=Root%20Cause.jpg)
 The root cause of the replication outage was traced back to an incorrect value used for the `MASTER_LOG_POS` parameter during the replica server's configuration.
 
 ## Timeline:
