@@ -18,7 +18,7 @@ The MySQL replication setup between the primary server (web-01) and the replica 
 The root cause of the replication outage was traced back to an incorrect value used for the `MASTER_LOG_POS` parameter during the replica server's configuration.
 
 ## Timeline:
-![](https://www.ncbar.org/wp-content/uploads/2022/02/Timeline-Visual-300x145.png)
+![](https://1.bp.blogspot.com/-grk7HcKuVbI/ULazwsVWpEI/AAAAAAAAAKQ/zKM1R2DuGJ8/s1600/vuBE+Image+7+whats+the+time+mr+wolf+by+monkeyc+dot+net+CC+BY-SA.jpg)
 
 - **09:00:** Users reported discrepancies in their data, prompting the team to investigate.
 
@@ -38,13 +38,16 @@ The root cause of the replication outage was traced back to an incorrect value u
 
 
 ## Root Cause and Resolution:
+![](https://1.bp.blogspot.com/-grk7HcKuVbI/ULazwsVWpEI/AAAAAAAAAKQ/zKM1R2DuGJ8/s1600/vuBE+Image+7+whats+the+time+mr+wolf+by+monkeyc+dot+net+CC+BY-SA.jpg)
 
 The root cause was the utilization of an erroneous `MASTER_LOG_POS` value during the replica server's configuration on `web-02`. This discrepancy led to data inconsistencies between the two servers.
 
 To address the issue, the correct `MASTER_LOG_POS` value was obtained from the primary server's `SHOW MASTER STATUS;` output. The replica's configuration was amended with the accurate `MASTER_LOG_POS` value, and the replication process was restarted. Subsequently, the replica server began to catch up with the primary server, resolving data discrepancies.
 
 ## Corrective and Preventative Measures:
+![](https://1.bp.blogspot.com/-grk7HcKuVbI/ULazwsVWpEI/AAAAAAAAAKQ/zKM1R2DuGJ8/s1600/vuBE+Image+7+whats+the+time+mr+wolf+by+monkeyc+dot+net+CC+BY-SA.jpg)
 
+-
 1. **Double-Check Configuration:** Institute a process to cross-verify replication configuration parameters before initializing the replication process.
 
 2. **Automation and Documentation:** Develop automated scripts for replication setup to minimize manual error and maintain up-to-date configuration documentation.
@@ -56,5 +59,7 @@ To address the issue, the correct `MASTER_LOG_POS` value was obtained from the p
 5. **Team Training:** Arrange training sessions to reinforce best practices in MySQL replication setup and maintenance.
 
 ## Conclusion:
+![](https://1.bp.blogspot.com/-grk7HcKuVbI/ULazwsVWpEI/AAAAAAAAAKQ/zKM1R2DuGJ8/s1600/vuBE+Image+7+whats+the+time+mr+wolf+by+monkeyc+dot+net+CC+BY-SA.jpg)
 
+-
 The MySQL replication disruption was a result of a misconfigured parameter during replica server setup. Rapid identification of the root cause, coupled with prompt corrective measures, demonstrated the efficacy of collaboration within the team. This incident emphasizes the importance of meticulous configuration practices, rigorous testing, and vigilant monitoring. By adopting these lessons, we are committed to delivering seamless and dependable services to our users.
