@@ -2,14 +2,19 @@
 ![](https://t3.ftcdn.net/jpg/04/92/09/72/240_F_492097246_yagE8x9Uk8M9IekPy7GBuE0x1Uoa7esD.jpg)
 
 ## Issue Summary:
-![](https://www.cienotes.com/wp-content/uploads/2019/07/summaryblackboard.jpg)
-**Duration:** July 18, 2023, 09:00 - 11:30 (UTC)
+![](https://www.newswire.com/blog/wp-content/uploads/2015/02/Expert-Strategies-for-Writing-Your-Press-Release-Summary.jpg)
+
+
+## Duration:
+July 18, 2023, 09:00 - 11:30 (UTC)
 
 ## Impact:
 The MySQL replication setup between the primary server (web-01) and the replica server (web-02) encountered a disruption, leading to data inconsistencies and impacting around 10% of users who experienced delayed or incorrect responses.
                                         
 ## Root cause                                         
 ![](https://blog.systemsengineering.com/hs-fs/hubfs/blog-files/Root%20Cause.jpg?width=600&name=Root%20Cause.jpg)
+
+
 The root cause of the replication outage was traced back to an incorrect value used for the `MASTER_LOG_POS` parameter during the replica server's configuration.
 
 ## Timeline:
