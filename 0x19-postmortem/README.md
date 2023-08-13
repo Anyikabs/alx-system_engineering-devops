@@ -7,7 +7,8 @@
 
 ## Duration:
 ![](https://wcpt.com.au/wp-content/uploads/2018/07/duration.png)
-July 18, 2023, 09:00 - 11:30 (UTC)
+
+**July 18, 2023, 09:00 - 11:30 (UTC)**
 
 ## Impact:
 ![](http://impactpromotions.net/images/impact.png)
