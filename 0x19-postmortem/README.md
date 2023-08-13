@@ -10,7 +10,7 @@
 July 18, 2023, 09:00 - 11:30 (UTC)
 
 ## Impact:
-![]([https://www.newswire.com/blog/wp-content/uploads/2015/02/Expert-Strategies-for-Writing-Your-Press-Release-Summary.jpg](http://impactpromotions.net/images/impact.png)
+![](http://impactpromotions.net/images/impact.png)
 The MySQL replication setup between the primary server (web-01) and the replica server (web-02) encountered a disruption, leading to data inconsistencies and impacting around 10% of users who experienced delayed or incorrect responses.
                                         
 ## Root cause                                         
@@ -47,7 +47,7 @@ The root cause was the utilization of an erroneous `MASTER_LOG_POS` value during
 To address the issue, the correct `MASTER_LOG_POS` value was obtained from the primary server's `SHOW MASTER STATUS;` output. The replica's configuration was amended with the accurate `MASTER_LOG_POS` value, and the replication process was restarted. Subsequently, the replica server began to catch up with the primary server, resolving data discrepancies.
 
 ## Corrective and Preventative Measures:
-![](https://batalas.co.uk/wp-content/uploads/Correction-corrective-action-and-preventive-action.jpgyc+dot+net+CC+BY-SA.jpg)
+![](https://batalas.co.uk/wp-content/uploads/Correction-corrective-action-and-preventive-action.jpg)
 
 -
 1. **Double-Check Configuration:** Institute a process to cross-verify replication configuration parameters before initializing the replication process.
